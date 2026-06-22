@@ -20,7 +20,7 @@ import { BetterReader } from "dev-pty-mirror";
 
 const encoder = new TextEncoder();
 
-export class AnuraPTT {
+export class RedPTT {
     process;
 
     constructor(process) {

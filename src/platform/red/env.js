@@ -9,7 +9,7 @@ export const CreateEnvProvider = (anura) => {
             );
 
             return {
-                USER: "anura",
+                USER: "red",
                 HOME: "/",
                 HOSTNAME: location.hostname,
                 PS1: "[\\u@\\h \\w]\\$ ",

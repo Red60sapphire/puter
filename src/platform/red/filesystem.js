@@ -99,7 +99,7 @@ export const CreateFilesystemProvider = (anura) =>
             const srcIsDir = srcStat.isDirectory();
 
             if (srcIsDir) {
-                // Copying directories is not yet implemented in the Anura shell.
+                // Copying directories is not yet implemented in the Red shell.
                 throw PosixError.IsDirectory({ path: oldPath });
             }
 

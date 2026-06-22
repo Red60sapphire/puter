@@ -23,14 +23,14 @@ import { SHELL_VERSIONS } from "./src/meta/versions.js";
 const ajs_options = {
     // The shell language defaults to module but we should be explicit.
     lang: "module",
-    // Version info is optional for anura binaries but we include it here for completeness.
+    // Version info is optional for red binaries but we include it here for completeness.
     version: SHELL_VERSIONS[0].v,
 }
 
 export default {
-    input: "src/main_anura.js",
+    input: "src/main_red.js",
     output: {
-        file: "dist/chimerix.ajs",
+        file: "dist/aethera.ajs",
         format: "es",
         banner: `#! ${JSON.stringify(ajs_options)}`,
     },

@@ -102,7 +102,7 @@ export default {
         if (ctx.locals.values.json) {
             await ctx.externs.out.write(
                 JSON.stringify({
-                    os: "AnuraOS",
+                    os: "RedOS",
                     version: anura.version,
                     uptime: {
                         days,
@@ -124,7 +124,7 @@ export default {
         lines[0] += COL + ctx.env.USER + END + "@" + COL + ctx.env.HOSTNAME + END;
         lines[1] += "-----------------";
         lines[2] +=
-        COL + "OS" + END + ": AnuraOS " + pretty + " (" + codename + ")";
+        COL + "OS" + END + ": RedOS " + pretty + " (" + codename + ")";
         lines[3] += COL + "Uptime" + END + ": " + formattedUptime;
         lines[4] += COL + "Commands" + END + ": " + commands;
         lines[5] += COL + "Shell" + END + ": Phoenix Shell v" + SHELL_VERSIONS[0].v;

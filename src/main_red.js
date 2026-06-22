@@ -1,8 +1,8 @@
 import { Context } from "contextlink-mirror";
 import { launchPuterShell } from "./puter-shell/main.js";
-import { CreateEnvProvider } from "./platform/anura/env.js";
-import { CreateFilesystemProvider } from "./platform/anura/filesystem.js";
-import { AnuraPTT } from "./pty/AnuraPTT.js";
+import { CreateEnvProvider } from "./platform/red/env.js";
+import { CreateFilesystemProvider } from "./platform/red/filesystem.js";
+import { RedPTT } from "./pty/RedPTT.js";
 
 const providers = [];
 const commands = {};
@@ -10,7 +10,7 @@ window.process = env.process
 
 const config = window.config || {}
 
-const ptt = new AnuraPTT(process)
+const ptt = new RedPTT(process)
 
 await launchPuterShell(
     new Context({
@@ -23,7 +23,7 @@ await launchPuterShell(
             process: env,
         }),
         platform: new Context({
-            name: "anura",
+            name: "red",
             env: CreateEnvProvider(anura),
             filesystem: CreateFilesystemProvider(anura),
         }),

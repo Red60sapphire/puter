@@ -144,7 +144,7 @@ export const launchPuterShell = async (ctx) => {
     };
 
     ctx.externs.out.write(
-        `${gradient("AnuraOS Chimerix Shell")} [v${SHELL_VERSIONS[0].v}]\n`,
+        `${gradient("RedOS Aethera Shell")} [v${SHELL_VERSIONS[0].v}]\n`,
     );
 
     ctx.externs.out.write('\n');

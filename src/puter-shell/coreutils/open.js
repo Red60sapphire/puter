@@ -3,7 +3,7 @@ import { Exit } from "./coreutil_lib/exit";
 export default {
   name: "open",
   usage: "open APP [ARGS]...",
-  description: "Launch an anura application.",
+  description: "Launch a red application.",
   args: {
     $: "simple-parser",
     allowPositionals: true,
